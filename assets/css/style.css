@@ -1,0 +1,23 @@
+body {
+    background-image: url(..//images/movies.jpg);
+}
+
+#header {
+    font-family: 'Cabin Sketch', cursive;
+    color: yellow;    
+    text-align: center;
+}
+
+#movieButtons {
+    text-align: center;
+}
+
+p {
+    font-family: 'Cabin Sketch', cursive;
+    color: yellow;
+    font-size: 20px;    
+}
+
+#displayGifs {
+    display: inline-block;
+}
