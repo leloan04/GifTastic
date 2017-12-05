@@ -1,6 +1,6 @@
 // $(document).ready(function() {
     //Create a variable to hold array of movie names
-    var movies = ["Deadpool", "Bad Moms", "Kingsman", "Underworld", "Iron Man", "The Time Traveler's Wife"];
+    var movies = ["Deadpool", "Ted", "Taken", "Twilight", "Bad Moms", "Kingsman", "Underworld", "Iron Man", "The Time Traveler's Wife"];
    
     //Create a function that will loop through the array to create a button for each movie title
     function renderButtons() {
@@ -31,7 +31,7 @@
                 data: {
                     q:movie,
                     api_key: "dc6zaTOxFJmzC",
-                    limit: 12
+                    limit: 6
                 }
             })
 
@@ -44,6 +44,7 @@
                 for (var i = 0; i < response.data.length; i++) {
                     
                     var movieDiv = $("<div>").addClass("item");
+                        movieDiv.addClass("col-xs-4");
                     var rating = results[i].rating;
                     var textRating = $("<p>").text("Rating: " + rating);
                     var movieImage = $("<img>");
